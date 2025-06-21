@@ -6,13 +6,58 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container">
-            <h1>pixel music</h1>
-            <p>
-                <button onclick="dropTheBeat()">button</button>
-                <audio id="beat" src="beat.mp3"></audio>
-            </p>
+        <nav>
+            <ul>
+                <li onclick="showTab('home')">home</li>
+                <li onclick="showTab('music')">music</li>
+                <li onclick="showTab('links')">links</li>
+            </ul>
+        </nav>
+
+        <div id="home" class="tab active">
+            <h1>flynn beats</h1>
+            <p>yo welcome to my lil slice of the internet 🍰</p>
         </div>
+
+        <div id="music" class="tab">
+            <h2>my tracks 🎵</h2>
+            <ul>
+                <li>
+                    <p>track 1 - “bass goblin”</p>
+                    <audio controls src="assets/beat1.mp3"></audio>
+                </li>
+                <li>
+                    <p>track 2 - “wizard wave”</p>
+                    <audio controls src="assets/beat2.mp3"></audio>
+                </li>
+                <!-- add more here -->
+            </ul>
+        </div>
+
+        <div id="links" class="tab">
+            <h2>follow me 🔗</h2>
+            <ul class="links">
+                <li>
+                    <a
+                        href="https://youtube.com/@pixelated_synth"
+                        target="_blank"
+                        >YouTube</a
+                    >
+                </li>
+                <li>
+                    <a href="https://discord.gg/yourserver" target="_blank"
+                        >Discord</a
+                    >
+                </li>
+                <li>
+                    <a href="https://soundcloud.com/yourhandle" target="_blank"
+                        >SoundCloud</a
+                    >
+                </li>
+                <!-- toss in whatever else u got -->
+            </ul>
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>

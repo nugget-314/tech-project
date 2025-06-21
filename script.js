@@ -1,5 +1,5 @@
-function dropTheBeat() {
-  const beat = document.getElementById("beat");
-  beat.play();
-  alert("button :3");
+function showTab(id) {
+  const tabs = document.querySelectorAll(".tab");
+  tabs.forEach((tab) => tab.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
 }
