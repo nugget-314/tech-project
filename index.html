@@ -1,59 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Pixel Music</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li onclick="showTab('home')">home</li>
-                <li onclick="showTab('music')">music</li>
-                <li onclick="showTab('links')">links</li>
-            </ul>
-        </nav>
-
-        <div id="home" class="tab active">
-            <h1>pixel music</h1>
-            <p>hello :3</p>
-        </div>
-
-        <div id="music" class="tab">
-            <h2>my tracks</h2>
-            <ul>
-                <li>
-                    <p>Nothing else... yet...</p>
-                    <audio controls src="assets/beat1.mp3"></audio>
-                </li>
-                <!-- add more here -->
-            </ul>
-        </div>
-
-        <div id="links" class="tab">
-            <h2>links</h2>
-            <ul class="links">
-                <li>
-                    <a
-                        href="https://youtube.com/@pixelated_synth"
-                        target="_blank"
-                        >YouTube</a
-                    >
-                </li>
-                <li>
-                    <a href="https://discord.gg/yourserver" target="_blank"
-                        >Discord</a
-                    >
-                </li>
-                <li>
-                    <a href="https://soundcloud.com/yourhandle" target="_blank"
-                        >SoundCloud</a
-                    >
-                </li>
-                <!-- toss in whatever else u got -->
-            </ul>
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>15 Minute Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="timer">15:00</div>
+    <button id="resetBtn">Reset</button>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
