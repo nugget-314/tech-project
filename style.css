@@ -26,8 +26,20 @@ button {
   font-size: 1.2rem;
   cursor: pointer;
   border-radius: 8px;
+  margin: 5px;
 }
 
 button:hover {
-  background: #666;
+  background: #477;
+}
+
+#snakeCanvas {
+  display: none;
+  background: #222;
+  border: 2px solid #fff;
+}
+
+#resetBtn,
+#playBtn {
+  display: none; /* start hidden */
 }
